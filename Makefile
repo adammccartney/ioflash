@@ -5,4 +5,4 @@ ioflash: ioflash.c
 	$(CC) $(CFLAGS) ioflash.c -o ioflash
 
 clean:
-	rm -f ioflash
+	rm -f ioflash error.log
