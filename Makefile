@@ -1,5 +1,9 @@
-CC=gcc
-CFLAGS=-Wall -g 
+.POSIX
+CC        = CC
+CFLAGS    = -Wall -Wextra -Og -g
+LDFLAGS   =
+LDLIBS    =
+EXE       = .exe
 
 ioflash: ioflash.c
 	$(CC) $(CFLAGS) ioflash.c -o ioflash
