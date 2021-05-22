@@ -1,0 +1,13 @@
+gcc -Wall -g -DNDEBUG ioflash.c -o ioflash
+ioflash.c: In function ‘getflashcard’:
+ioflash.c:95:5: error: label ‘error’ used but not defined
+     check(rc > 0, "You have to enter a number." );
+     ^~~~~
+ioflash.c: In function ‘process_input’:
+ioflash.c:105:11: warning: unused variable ‘in’ [-Wunused-variable]
+     char *in = NULL;
+           ^~
+ioflash.c:104:11: warning: unused variable ‘f’ [-Wunused-variable]
+     char *f = NULL;
+           ^
+make: *** [Makefile:5: ioflash] Error 1
