@@ -1,12 +1,12 @@
-.POSIX
-CC        = CC
+.POSIX:
+CROSS     =
+CC        = $(CROSS)gcc
 CFLAGS    = -Wall -Wextra -Og -g
 LDFLAGS   =
 LDLIBS    =
-EXE       = .exe
 
-ioflash: ioflash.c
-	$(CC) $(CFLAGS) ioflash.c -o ioflash
+ioflash.exe: ioflash.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ ioflash.c $(LDLIBS)
 
 clean:
-	rm -f ioflash error.log
+	rm -f ioflash.exe error.log
