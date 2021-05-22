@@ -1,3 +1,9 @@
 # ioflash
 
-small didactic program for i/o and file function calls on Linux
+Didactic command line tool for i/o and file function calls on Linux
+
+
+## To run
+
+make
+./ioflash
